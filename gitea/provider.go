@@ -84,6 +84,7 @@ func Provider() *schema.Provider {
 			"gitea_git_hook":       resourceGiteaGitHook(),
 			"gitea_token":          resourceGiteaToken(),
 			"gitea_repository_key": resourceGiteaRepositoryKey(),
+			"gitea_push_mirror":    resourceGiteaPushMirror(),
 		},
 
 		ConfigureFunc: providerConfigure,
